@@ -1,0 +1,99 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "ad1027b7-48f1-4874-9142-c7ca39bce491": {
+        "id": "ad1027b7-48f1-4874-9142-c7ca39bce491",
+        "parent": null,
+        "name": "sam",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "3142c3ca-9cf3-4e20-8e8c-75aa58df8e31"
+        ],
+        "isRemovable": false,
+        "filePath": "sam"
+      },
+      "3142c3ca-9cf3-4e20-8e8c-75aa58df8e31": {
+        "id": "3142c3ca-9cf3-4e20-8e8c-75aa58df8e31",
+        "parent": "ad1027b7-48f1-4874-9142-c7ca39bce491",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sam/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "67c26cbf-d1fe-4ea5-adc2-115e0e57e554": {
+        "id": "67c26cbf-d1fe-4ea5-adc2-115e0e57e554",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.samfunction = require(\"./sam/function.js\").handler;"
+      },
+      "146d22f6-83df-4856-86fe-34e8f12470e5": {
+        "id": "146d22f6-83df-4856-86fe-34e8f12470e5",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "rootNode": "ad1027b7-48f1-4874-9142-c7ca39bce491",
+    "openFiles": [
+      "3142c3ca-9cf3-4e20-8e8c-75aa58df8e31"
+    ],
+    "currentFileId": "3142c3ca-9cf3-4e20-8e8c-75aa58df8e31",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "sam",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1568622485113
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "sam",
+      "url": "https://github.com/Kumudikatest/sam"
+    }
+  }
+}
